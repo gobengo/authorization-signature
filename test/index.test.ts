@@ -1,7 +1,7 @@
 import { describe, test } from "node:test"
 import assert from "node:assert"
 import { Ed25519Signer } from "@did.coop/did-key-ed25519"
-import { createRequestWithHttpSignature, HttpSignatureAuthorization, UnixTimestamp } from "./index.js"
+import { createRequestWithHttpSignature, HttpSignatureAuthorization, UnixTimestamp } from "authorization-signature"
 import { getVerifierForKeyId } from "@did.coop/did-key-ed25519/verifier"
 
 await describe(`dzcap/http-signature`, async () => {

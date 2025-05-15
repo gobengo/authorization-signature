@@ -9,17 +9,15 @@
     "checkJs": true,
     "sourceMap": true,
     "outDir": "lib",
+    "noEmit": true,
     "lib": [
       "ESNext",
       "DOM"
-    ],
-    "types": [
     ],
     "jsx": "react-jsx",
     "jsxImportSource": "react"
   },
   "exclude": [
-    "test",
     "node_modules",
     "lib"
   ],

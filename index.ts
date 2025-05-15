@@ -12,7 +12,7 @@ import { ISigner } from './types.js';
 export async function createRequestWithHttpSignature(
   url: URL,
   options: {
-    body?: Blob | Uint8Array | Buffer | string | null | FormData
+    body?: Blob | Uint8Array | string | null | FormData
     method?: string,
     signer: ISigner
     headers?: Record<string,string>,

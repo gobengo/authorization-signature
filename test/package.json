@@ -1,0 +1,15 @@
+{
+  "name": "authorization-signature-test",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "tsx --test",
+    "tsc": "tsc --build"
+  },
+  "dependencies": {
+    "authorization-signature": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.12.0"
+  }
+}

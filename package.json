@@ -3,6 +3,10 @@
   "type": "module",
   "version": "1.0.3",
   "main": "lib/index.js",
+  "workspaces": [
+    ".",
+    "test"
+  ],
   "exports": {
     ".": {
       "types": "./index.ts",
@@ -11,7 +15,7 @@
   },
   "scripts": {
     "byexample": "byexample -l javascript README.md",
-    "test": "tsx --test",
+    "test": "npm -w test run test",
     "tsc": "tsc --build",
     "prepare": "npm run tsc"
   },
@@ -20,7 +24,6 @@
   },
   "devDependencies": {
     "@did.coop/did-key-ed25519": "*",
-    "@types/node": "^22.12.0",
     "typescript": "^5.8.3"
   },
   "publishConfig": {
