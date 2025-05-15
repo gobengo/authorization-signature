@@ -1,0 +1,29 @@
+{
+  "name": "authorization-signature",
+  "type": "module",
+  "version": "1.0.3",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "types": "./index.ts",
+      "default": "./lib/index.js"
+    }
+  },
+  "scripts": {
+    "byexample": "byexample -l javascript README.md",
+    "test": "tsx --test",
+    "tsc": "tsc --build",
+    "prepare": "npm run tsc"
+  },
+  "dependencies": {
+    "@digitalbazaar/http-signature-header": "^5.0.1"
+  },
+  "devDependencies": {
+    "@did.coop/did-key-ed25519": "*",
+    "@types/node": "^22.12.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
