@@ -20,12 +20,13 @@
   },
   "devDependencies": {
     "@did.coop/did-key-ed25519": "*",
-    "@types/node": "^22.12.0"
+    "@types/node": "^22.12.0",
+    "typescript": "^5.8.3"
   },
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
- },
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gobengo/authorization-signature.git"
