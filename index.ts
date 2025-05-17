@@ -107,7 +107,8 @@ interface SignatureVerifier {
 
 export class HttpSignatureAuthorization {
   static async verified(request: Request, options: {
-    getVerifier(keyId: string): Promise<SignatureVerifier>
+    getVerifier(keyId: string): Promise<SignatureVerifier>,
+    headers?: string[],
   }) {
     const headersObject = headersToObject(request.headers)
     const parsed = parseRequest({
@@ -115,7 +116,7 @@ export class HttpSignatureAuthorization {
       method: request.method,
       headers: headersObject,
     }, {
-      headers: ['(key-id)', '(created)', '(expires)', '(request-target)', 'host']
+      headers: options.headers ?? ['(key-id)', '(created)', '(expires)', '(request-target)'],
     })
     const keyId = parsed.params.keyId
     const headers = parsed.params.headers
