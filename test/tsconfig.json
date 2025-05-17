@@ -9,7 +9,6 @@
     "checkJs": true,
     "sourceMap": true,
     "outDir": "lib",
-    "noEmit": true,
     "lib": [
       "ESNext",
       "DOM"

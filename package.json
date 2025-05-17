@@ -33,5 +33,6 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gobengo/authorization-signature.git"
-  }
+  },
+  "license": "MIT"
 }
