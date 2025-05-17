@@ -1,5 +1,11 @@
 # authorization-signature
 
+## 1.1.0
+
+### Minor Changes
+
+- 7781f5f: default includeHeaders no longer includes host
+
 ## 1.0.3
 
 ### Patch Changes
