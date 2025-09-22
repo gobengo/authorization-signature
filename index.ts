@@ -9,10 +9,12 @@ import { bytesFromBase64, bytesToBase64 } from "./base64.js"
 import { DID, DIDKeyVerificationMethodId } from "./did.js";
 import { ISigner } from './types.js';
 
+type NonSharedUint8Array = ReturnType<typeof Uint8Array.from>;
+
 export async function createRequestWithHttpSignature(
   url: URL,
   options: {
-    body?: Blob | Uint8Array | string | null | FormData
+    body?: Blob | NonSharedUint8Array | string | null | FormData
     method?: string,
     signer: ISigner
     headers?: Record<string,string>,

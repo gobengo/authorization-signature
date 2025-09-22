@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@did.coop/did-key-ed25519": "*",
-    "typescript": "^5.8.3"
+    "typescript": "^5.9.2"
   },
   "publishConfig": {
     "access": "public",
