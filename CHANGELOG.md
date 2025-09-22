@@ -1,5 +1,11 @@
 # authorization-signature
 
+## 1.2.0
+
+### Minor Changes
+
+- createRequestWithHttpSignature options.body is now typed as ReturnType<typeof Uint8Array.from> per https://github.com/microsoft/TypeScript/issues/62240#issuecomment-3288389211
+
 ## 1.1.0
 
 ### Minor Changes
